@@ -20,25 +20,26 @@
         </nav>
 
         <form name="form_cad" action="envia.html" method="post">
-            <serction>
-                <p>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" required>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" required placeholder="example@example.com">
-                    <label for="idade">Idade:</label>
-                    <input type="number" name="idade" required>
-                </p>
-            </serction>
+            <fieldset>
+                <serction>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" size="35" maxlength="50" required autofocus>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" required size="30" maxlength=""placeholder="example@example.com">
+                        <label for="idade">Idade:</label>
+                        <input type="number" name="idade" size="2" maxlength="3"required>
+                    </p>
+                </serction>
 
-            <section>
-                <p>
-                    <input type="button" value="Voltar">
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Enviar">
-                </p>
-            </section>
-
+                <section>
+                    <p>
+                        <input type="button" value="Voltar">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar">
+                    </p>
+                </section>
+            </fieldset>
         </form>
     </body>
 </html>
