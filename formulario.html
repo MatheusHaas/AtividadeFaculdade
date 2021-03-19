@@ -7,6 +7,7 @@
         <meta name="Description" content="Formulário de cadastro do Web site">
         <meta name="Author" content="Matheus Assunção Haas">
         <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Formulário</title>
     </head>
     <body class="form">
@@ -24,49 +25,51 @@
                             <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
                             <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>  
                         </div>
-                  </div>                   
-                    <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
-                    <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
-                    <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
-                    <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
-                    <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
-                    <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
-                    <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
-              </nav>
+                  </div>   
+                    <div>                
+                        <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
+                        <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
+                        <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
+                        <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
+                        <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
+                        <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
+                        <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
+                    </div>
+                </nav>
         </header>
 
-        <form name="form_cad" action="envia.html" method="get">
-            <fieldset>
+        <div class="container">
+            <form class="form_cadastro" name="form_cad" action="envia.html" method="get">
+                <fieldset>
 
-                <section>
-                        <p class="cad-titulo"> <b>FORMULÁRIO - CADASTRO DE CLIENTE</b></p>
+                    <section>
+                            <p class="cad-titulo"> <b>FORMULÁRIO - CADASTRO DE CLIENTE</b></p>
+                            
+                                <label class="label" for="nome">Nome Completo</label>
+                                <input class="cad-nome" type="text" name="nome" placeholder="Ex: Luiz Frito" required autofocus>                                         
+                            
+                                <label class="label" for="email">E-mail</label>
+                                <input class="cad-email" type="email" name="email" required placeholder="example@example.com">
                         
-                            <label class="label" for="nome">Nome Completo</label>
-                            <input class="cad-nome" type="text" name="nome" required autofocus>                                         
-                        
-                            <label class="label" for="email">E-mail</label>
-                            <input class="cad-email" type="email" name="email" required placeholder="example@example.com">
-                      
-                            <label class="label" for="idade">Idade</label>
-                            <input class="cad-idade" type="number" name="idade" required>                                           
-                </section>
+                                <label class="label" for="idade">Idade</label>
+                                <input class="cad-idade" type="number" name="idade" placeholder="Ex: 19" required>                                           
+                    </section>
 
-                <section class="cad-botao">
-                    <p>
-                        <input type="button" value="Voltar">
-                        <input type="reset" value="Limpar">
-                        <input type="submit" value="Enviar">
-                    </p>
-                </section>
-            </fieldset>
-        </form>
-
-        <footer class="footer">
-            <a href="https://www.facebook.com/UnigranEADOficial">Facebook</a>
-            <a href="https://www.instagram.com/unigranead/">Instagram</a>
-            <a href="https://github.com/MatheusHaas">Github do Criador do Web Site</a>
+                    <section class="cad-botao">
+                        <p>
+                            <input type="button" value="Voltar">
+                            <input type="reset" value="Limpar">
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </section>
+                </fieldset>
+            </form>
+        </div>
+        
+        <footer class="footer-social">
+            <a href="https://www.facebook.com/UnigranEADOficial" title="Facebook" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/unigranead/" title="Instagram" class="fa fa-instagram"></a>
+            <a href="https://github.com/MatheusHaas" title="Github do Criador" class="fa fa-github"></a>
         </footer>
-
-
     </body>
 </html>

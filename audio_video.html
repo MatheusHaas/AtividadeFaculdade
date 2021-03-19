@@ -7,6 +7,7 @@
         <meta name="Description" content="Esta página contém uma música que não sai da minha cabeça a semanas e um video para descontrair (Para aprimorar as habilidades com tag video e CSS), por favor desfrute.">
         <meta name="Author" content="Matheus Assunção Haas">
         <link rel="stylesheet" href="./css/estilos.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Aula 6</title>
     </head>
     <body>
@@ -24,35 +25,39 @@
                         <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
                         <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>  
                     </div>
-                  </div>                   
-                    <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
-                    <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
-                    <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
-                    <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
-                    <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
-                    <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
-                    <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
-              </nav>
+                  </div>  
+                  <div>                 
+                        <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
+                        <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
+                        <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
+                        <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
+                        <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
+                        <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
+                        <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
+                    </div>
+            </nav>
         </header>
+        <div class="container">
+            <section class="audio-classe" id="audio">
+                <p>Ann Clue - Trip</p>
+                <audio src="./audio_video/ann clue - trip.mp3" type="audio/mp3; codecs='mp3'" media="screen" controls="true">
+                Que pena, o seu browser não suporta mp3!
+                </audio>
+            </section>
 
-        <section id="audio">
-            Ann Clue - Trip
-            <audio src="./audio_video/ann clue - trip.mp3" type="audio/mp3; codecs='mp3'" media="screen" controls="true">
-            Que pena, o seu browser não suporta mp3!
-            </audio>
-        </section>
+            <section class="video-classe" id="video">
+                <p>Aqui está um video para você se divertir: O Gato louco.</p>
+                <video src="./audio_video/gato louco.mp4" type="video/mp4; codecs='MPEG4'" media="screen" controls="true">
+                    Que pena, o seu browser não suporta MP4!
+                </video>
+            </section>
 
-        <section id="video">
-            <video src="./audio_video/gato louco.mp4" type="video/mp4; codecs='MPEG4'" media="screen" controls="true">
-                Que pena, o seu browser não suporta MP4!
-            </video>
-        </section>
-
-        <footer class="footer">
-            <a href="https://www.facebook.com/UnigranEADOficial">Facebook</a>
-            <a href="https://www.instagram.com/unigranead/">Instagram</a>
-            <a href="https://github.com/MatheusHaas">Github do Criador do Web Site</a>
-        </footer>
+            <footer class="footer-social">
+                <a href="https://www.facebook.com/UnigranEADOficial" title="Facebook" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/unigranead/" title="Instagram" class="fa fa-instagram"></a>
+                <a href="https://github.com/MatheusHaas" title="Github do Criador" class="fa fa-github"></a>
+            </footer>
+        </div>
 
     </body>
 </html>
