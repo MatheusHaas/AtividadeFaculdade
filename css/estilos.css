@@ -1,14 +1,49 @@
-/*********  Web Site  ***************/
+/**************************  Web Site  ****************************/
+
+/*
+  Adição das regras para ajustar as bordas do site para que não ficasse fora do display
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+  Padronizando todos os backgrounds com uma cor.
+*/
 
 body {
   background-color: rgb(27, 31, 34);
+
 }
 
-.aboutme, .Content, .unigranlogo, .navigation, .header-content, section, figcaption{ 
+/*
+  Deixando um padrão de centralização e cores para todas as páginas.
+*/
+
+.aboutme, .Content, .unigranlogo, .navigation, .header-content, figcaption, .aula, .mensagem-bem-vindo{ 
   text-align: center;
   color: white;
 }
+
+
+/**********************************************************************/
+
  /**************  Home page  *******************/
+
+/*
+  cabeçalho das páginas, mostrando o nome da disciplina e o curso.
+*/
+
 .content {
   border: outset;
   border-radius: 10px;
@@ -16,7 +51,71 @@ body {
 
 
 
- /* Logo unigran na home page */
+/*  
+  Mensagem de boas vindas com uma animação para ficar um pouquinho legal o site.
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.mensagem-bem-vindo, .cad-sucesso {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: sans-serif;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+
+
+ /* 
+ Logo unigran na home page 
+ */
  
 .unigranlogo {
   position: absolute;
@@ -24,21 +123,28 @@ body {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  padding-top: 200px;
 }
 
-/*********** Botões de navegação ************/
+/************************ Botões de navegação **********************/
 
-/* Adiciona um fundo preto no topo da navegação */ 
+/* 
+Adiciona um fundo preto no topo da navegação 
+*/ 
+
 .topnav {
   background-color: rgb(27, 31, 34);
   overflow: hidden;
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 40px;
 }
 
-/* Estiliza os links dentro da barra de navegação  */ 
+/* 
+Estiliza os links dentro da barra de navegação  
+*/ 
+
 .topnav a {
   float: left;
   display: block;
@@ -51,21 +157,30 @@ body {
   border-color: white;
   border-radius: 9px;
   border: 2px solid;
+  min-width: 130px;
+  margin: 0 4px;
 }
 
-/* Posição do Conteiner dropdown */
+/* 
+Posição do Conteiner dropdown 
+*/
+
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
-/* Estiliza o botão dropdown para encaixar na barra de navegação */
+/* 
+Estiliza o botão dropdown para encaixar na barra de navegação 
+*/
+
 .dropdown .dropbtn {
   font-size: 17px;
   border: none;
   outline: none;
   color: white;
   padding: 14px 16px;
+  background-color: rgb(27, 31, 34);
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -73,69 +188,172 @@ body {
   border-color: white;
   border-radius: 9px;
   border: 2px solid;
+  min-width: 130px;
+  margin: 0 4px;
 }
-/* Estiliza o dropdown(escondido) */
+/* 
+Estiliza o dropdown(escondido) 
+*/
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
+  min-width: 130px;
+  margin: 0 4px;
 }
 
-/* Estiliza os links dentro do dropdown */
+/* 
+Estiliza os links dentro do dropdown 
+*/
+
 .dropdown-content a {
   float: none;
   color: rgb(255, 242, 242);
   padding: 12px 16px;
   text-decoration: none;
+  background-color: rgb(27, 31, 34);
   display: block;
   text-align: left;
   border-style: solid;
   border-color: white;
   border-radius: 9px;
   border: 2px solid;
+  z-index: 1000;
 }
 
-/* Adiciona um fundo vermelho na navegação topo quando o mouse é descansado(hover) */
+/* 
+Adiciona um fundo vermelho na navegação topo quando o mouse é descansado(hover) 
+*/
+
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(207, 3, 3);
+  background-color: rgb(202, 0, 0);
   color: white;
 }
 
-/* Adiciona um fundo vermelho nos links quando o mouse é descansado(hover) */
+/* 
+Adiciona um fundo vermelho nos links quando o mouse é descansado(hover) 
+*/
+
 .dropdown-content a:hover {
   background-color: rgb(202, 0, 0);
   color: white;
 }
 
-/* Mostra o menu dropdown quando o mouse passar pelo botão. */
+/* 
+Mostra o menu dropdown quando o mouse passar pelo botão. 
+*/
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Em dispositivos com telas pequenas irá reduzir a navegação e apresentar apenas o botão de conteúdo */
+/****************  Display  *************************/
+
+/* 
+Em dispositivos com telas pequenas irá reduzir a navegação e apresentar apenas o botão de conteúdo 
+*/
+
 @media screen and (max-width: 600px) {
   .topnav div:last-of-type {
     display: none;
   }
 }
 
-/*********** aula 1 e 2 ************/
+/************************************************************************/
+
+/******************** aula 1 e 2 **************************/
+
+/* 
+Mudando a fonte das letras, alinhando para que o texto e as perguntas fiquem mais centralizadas, em vez de preencher toda a tela. 
+*/
+
+.aula {
+  font-family: sans-serif;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 
+Ajusta a lista ordenada para que os números fiquem perto da escrita 
+*/
+
+.lista-ordenada {
+  list-style-position: inside;
+}
+
+/* 
+Linha para dividir as perguntas e respostas para não ficar tão feio. 
+*/
+
+.line {
+  width: 400px;
+  margin-top: 90px;
+}
+
+
+/* 
+Deixando em bloquinhos para melhor vizualização 
+*/
 
 .questao {
   display: inline-block;
-  
+  padding: 10px;
+}
 
+
+/*****************  Aula 3 *********************/
+
+.home-page-button {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 9px;
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  width: auto;
+  margin-top: 200px;
+}
+
+
+/****************  Aula 04 *************************/
+
+.pintura-leo {  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:300px;
+  width: auto;
+  padding-bottom: 50px;
+}
+
+.foto-ivy {  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:300px;
+  width: auto;
 }
 
 
 
+/********************** Formulário Cadastro *************************/
 
-/******************** Formulário Cadastro ********************/
+/************* Aula 5  *************/
 
-/* Posição do Cadastro */
+/* 
+Posição do Cadastro 
+*/
 .form_cadastro {
   display: inline-block;
   position: absolute;
@@ -154,22 +372,33 @@ body {
 
 .label{
   color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: left;
 }
 
-.cad-idade, .cad-nome, .cad-email {
+.campo-cad {
   width: 100%; 
   padding: 12px; 
   border: 1px solid #ccc; /* Borda cinza */
   border-radius: 4px; /* Bordas redondas */
   box-sizing: border-box; 
-  margin-top: 6px; /* margem do topo */
+  margin-top: 15px; /* margem do topo */
   margin-bottom: 16px; /* margem do rodapé */
   font-family: sans-serif;
   font-size: 1;
 }
 
+.idade-cad {
+  width: 100px;
+  display: flex;
+}
 
-/* Estilizando os botões do cadastro */
+
+/* 
+Estilizando os botões do cadastro 
+*/
+
 input[type=submit], input[type=reset], input[type=button] {
   background-color: rgb(27, 31, 34);
   color: white;
@@ -179,9 +408,13 @@ input[type=submit], input[type=reset], input[type=button] {
   cursor: pointer;
   border-style: solid;
   border-color: white;
+  font-family: sans-serif;
 }
 
-/* Quando o mouse passar por cima irá mudar para uma cor mais forte. */ 
+/* 
+Quando o mouse passar por cima irá mudar para uma cor mais forte. 
+*/ 
+
 input[type=submit]:hover {
   background-color: #4e4e4e;
 }
@@ -199,25 +432,65 @@ input[type=reset]:hover {
 /******************* Aula 06 - audio e video *********************/
 
 .audio-classe, .video-classe p {
+  text-align: center;
+  display: block;
+  border: 3px solid;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
   font-size: 20px;
 }
 
-.audio-classe{
-  border: 2px solid;
+/*************  Envia.html *********************/
 
+.sucesso a{
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 9px;
+  border: 2px solid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  width: auto;
+  margin-top: 200px;
 }
 
-.video-classe {
-  border: 2px solid;
 
+/************** Sobre Mim ************************/
+
+.aboutme {
+  border: 4px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  margin: 200px auto 0;
+  font-family: sans-serif;
+  max-width: 600px;
 }
+
 
 
 /********************* RODAPÉ **************************/
 
+/* 
+Criado a classe container para que o footer-social não ficasse em cima do conteúdo 
+*/
+
 .container {
   margin-bottom: 125px;
 }
+
+/* 
+Barra do rodapé com os icones sociais para navegar entre o facebook e instagram da UNIGRAN, e também meu github para que pessoas possam ver esse pequeno projeto proposto da matéria. Utilizando URL absolutas para os icones. 
+*/
 
 .footer-social {
   overflow: hidden;
@@ -233,7 +506,6 @@ input[type=reset]:hover {
 .fa-facebook {
   padding: 20px;
   font-size: 80px;
-  width: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -244,7 +516,6 @@ input[type=reset]:hover {
 .fa-instagram {
   padding: 20px;
   font-size: 80px;
-  width: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -255,7 +526,6 @@ input[type=reset]:hover {
 .fa-github {
   padding: 20px;
   font-size: 80px;
-  width: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;

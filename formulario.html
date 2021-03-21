@@ -12,47 +12,53 @@
     </head>
     <body class="form">
 
-        <header>
+        <header class="header-content">        
+            <div class="content">
+                <h1>CURSO: Técnologia em Análise e Desenvolvimento de Sistemas</h1>
+                <h3>Disciplina: Desenvolvimento Voltado a Web I</h3>
+            </div>
+
             <nav class="topnav" id="myTopnav">
                 <div class="dropdown">
                     <button class="dropbtn">Conteudo</button>
-                        <div class="dropdown-content">
-                            <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
-                            <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
-                            <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
-                            <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
-                            <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
-                            <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
-                            <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>  
-                        </div>
-                  </div>   
-                    <div>                
+                    <div class="dropdown-content">
                         <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
                         <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
                         <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
                         <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
                         <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
                         <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
-                        <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
+                        <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>  
                     </div>
-                </nav>
+                </div>                   
+                <div>
+                    <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
+                    <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
+                    <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
+                    <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
+                    <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
+                    <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
+                    <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
+                </div>
+              </nav>
+
         </header>
 
         <div class="container">
             <form class="form_cadastro" name="form_cad" action="envia.html" method="get">
                 <fieldset>
 
-                    <section>
+                    <section class="">
                             <p class="cad-titulo"> <b>FORMULÁRIO - CADASTRO DE CLIENTE</b></p>
                             
                                 <label class="label" for="nome">Nome Completo</label>
-                                <input class="cad-nome" type="text" name="nome" placeholder="Ex: Luiz Frito" required autofocus>                                         
+                                <input class="campo-cad" type="text" name="nome" placeholder="Ex: Luiz Frito" required autofocus>                                         
                             
                                 <label class="label" for="email">E-mail</label>
-                                <input class="cad-email" type="email" name="email" required placeholder="example@example.com">
+                                <input class="campo-cad" type="email" name="email" required placeholder="example@example.com">
                         
                                 <label class="label" for="idade">Idade</label>
-                                <input class="cad-idade" type="number" name="idade" placeholder="Ex: 19" required>                                           
+                                <input class="campo-cad idade-cad" type="number" name="idade" placeholder="Ex: 19" required>                                           
                     </section>
 
                     <section class="cad-botao">

@@ -12,7 +12,12 @@
     </head>
     <body>
 
-        <header>
+        <header class="header-content">        
+            <div class="content">
+                <h1>CURSO: Técnologia em Análise e Desenvolvimento de Sistemas</h1>
+                <h3>Disciplina: Desenvolvimento Voltado a Web I</h3>
+            </div>
+
             <nav class="topnav" id="myTopnav">
                 <div class="dropdown">
                     <button class="dropbtn">Conteudo</button>
@@ -25,8 +30,8 @@
                         <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
                         <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>  
                     </div>
-                  </div>  
-                  <div>                 
+                </div>                   
+                <div>
                     <a href="./index.html" title="Ir para Página Principal" target="_Top">Home Page</a>
                     <a href="./aulas1_2.html" title="Ir para Aulas 1 e 2" target="_Top">Aulas 1 e 2</a>   
                     <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
@@ -35,13 +40,15 @@
                     <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
                     <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>
                 </div>
-            </nav>
+              </nav>
+
         </header>
 
         <div class="container">
             <section class="aula">
-                <h1 class="aula-titulo">Aula 1</h1>
+                
                 <p class="questao">
+                    <h1 class="aula-titulo">Aula 1</h1>
                     <h2>Questão número 1</h2>
 
                     Neste primeiro momento, gostaria de levá-lo a refletir: Quando e como ocorreu seu primeiro contato com a internet? Quais os recursos e utilidades eram disponíveis na época? Qual era o navegador utilizado? Quais eram as características do layout e do conteúdo? De lá pra cá, muita coisa mudou? Descreva sua experiência.
@@ -56,6 +63,9 @@
                         
                     Agora que estamos em 2021 os sites interagem com usuário de uma maneira que torna divertido, empolgante de se utilizar, descobrir como foi feito, o que usar, fazer e a quantidade de páginas que possui, super intuitivo.
                 </p>
+
+            <hr class="line"/>
+
                 <p class="questao">
                     <h2>Questão número 2</h2>
 
@@ -65,8 +75,10 @@
 
                     URL é o endereço de um determinado web site, podendo ser acessado via http/https ou IP. Quando você obtêm informação do endereço você pode acessá-lo de qualquer browser. A URL é constituida pelo Servidor, diretório e o arquivo no qual está sendo vizualisado. Unido com o Protocolo HTTP, eles mantém um padrão do que será acessado e se está ativo, autorizado ou impedido.
                     As URLs Absolutas são endereços completos, incluindo protocolos, o domínio no qual o servidor está hospedado, sendo utilizado para apontar arquivos que pertencem a outro site. Ex: http://www.google.com
-                    As URLs relativas são curtas, omitindo partes da sintaxe do endereço, fazendo o browser ser o encarregado de "completar" com partes da página atual. Por isso são relativos, não há necessidade de sair do diretório pois o arquivo origem está no mesmo local do arquivo alvo, sendo usado para arquivos localizados no mesmo site. Ex: site.exemplo/index.html
+                    As URLs relativas são curtas, omitindo partes da sintaxe do endereço, fazendo o browser ser o encarregado de "completar" com partes da página atual. Por isso são relativos, não há necessidade de sair do diretório pois o arquivo origem está no mesmo local do arquivo alvo, sendo usado para arquivos localizados no mesmo site. Ex: ./index.html
                 </p>
+
+            <hr class="line"/>
 
                 <p class="questao">
                     <h2>Questão número 3</h2>
@@ -82,6 +94,8 @@
                     Não me gabando mas com essa idade eu já tinha conhecimento para onde queria ir. Como era muito curioso eu abria vários links e observava como a barra de enredeços, URL, modificava.
                 </p>
 
+            <hr class="line"/>
+
                 <p class="questao">
                     <h2>Questão número 4</h2>
 
@@ -93,8 +107,9 @@
                     Já no Back-end usasse mais a parte de lógica de programação, tratamento de dados recebidos e enviados, como serão armazenados no banco de dados. Utilizasse a linguagem Back-end como: Java, C#, C++, Python e entre outras. 
                     O mais interessante é como as duas técnologias se comunicam, o front-end e o back-end utilizam a API para se comunicar e trocar informações, front-end solicitando X informação, back-end recebe, trata a informação, confere no banco de dados e retorna para o front-end.
                 </p>
-
             </section>
+
+            <hr class="line"/>
 
             <section class="aula">
                 <h1 class="aula-titulo">Aula 2</h1>
@@ -106,14 +121,16 @@
                     <h2>Resposta:</h2>
 
                     A comunicação entre cliente e servidor funciona da seguinte maneira:
-                    <ol>
-                        <li>O usuário solicita as informações pelo URL, usando o protocolo http com o código resposta.</li>
-                        <li>O Servidor verifica se o protocolo obteve sucesso, não obteve sucesso ou não existe no servidor.</li>
-                        <li>Se houver resposta: De confirmação, erro ou inesistente, ele retorna para o usuário.</li>
-                        <li>A cópia do documento, web site, aparecerá na tela do usuário(Caso seja 200) ou irá aparecer que há um erro de servidor (Caso seja 404) ou cliente (Caso seja 500). </li>
+                    <ol class="lista-ordenada">
+                        <li class="linha">O usuário solicita as informações pelo URL, usando o protocolo http com o código resposta.</li>
+                        <li class="linha">O Servidor verifica se o protocolo obteve sucesso, não obteve sucesso ou não existe no servidor.</li>
+                        <li class="linha">Se houver resposta: De confirmação, erro ou inesistente, ele retorna para o usuário.</li>
+                        <li class="linha">A cópia do documento, web site, aparecerá na tela do usuário(Caso seja 200) ou irá aparecer que há um erro de servidor (Caso seja 404) ou cliente (Caso seja 500). </li>
                     </ol>
                 </p>
-                
+
+            <hr class="line"/>
+
                 <p class="questao">
                     <h2>Questão número 2</h2>
 
