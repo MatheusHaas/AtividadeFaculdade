@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="Esta página contém uma música que não sai da minha cabeça a semanas e um video para descontrair (Para aprimorar as habilidades com tag video e CSS), por favor desfrute.">
+        <meta name="Description" content="Formulário de cadastro do Web site">
         <meta name="Author" content="Matheus Assunção Haas">
         <link rel="stylesheet" href="./css/estilos.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Aula 6</title>
+        <script src="./scripts/validaFormulario.js"></script>
+        <title>Formulário</title>
     </head>
-    <body>
+    <body class="form">
 
         <header class="header-content">        
             <div class="content">
@@ -45,31 +46,39 @@
               </nav>
 
         </header>
+
         <div class="container">
-            <section class="audio-classe" id="audio">
-                <p>
-                    Ann Clue - Trip
-                    <audio src="./audio_video/ann clue - trip.mp3" type="audio/mp3; codecs='mp3'" media="screen" controls="true">
-                    Que pena, o seu browser não suporta mp3!
-                    </audio>
-                </p>
-            </section>
+            <form name ="cadForm" id="cadForm" class="formcadastro" action="" method="get" onSubmit="return ValidaFormulario()" >
+                <fieldset>
 
-            <section class="video-classe" id="video">
-                <p>
-                    Aqui está um video para você se divertir: O Gato louco.
-                    <video src="./audio_video/gato louco.mp4" type="video/mp4; codecs='MPEG4'" media="screen" controls="true">
-                    Que pena, o seu browser não suporta MP4!
-                    </video>
-                </p>
-            </section>
+                    <section class="">
+                            <p class="cad-titulo"> <b>FORMULÁRIO - CADASTRO DE CLIENTE</b></p>
+                            
+                                <label class="label" for="nome">Nome Completo</label>
+                                <input class="campo-cad" id="nome" type="text" name="nome" placeholder="Ex: Luiz Frito">    
+                            
+                                <label class="label" for="email">E-mail</label>
+                                <input class="campo-cad" id="email" type="text" name="email" placeholder="example@example.com">
+                        
+                                <label class="label" for="idade">Idade</label>
+                                <input class="campo-cad idade-cad" type="text" id="idade" name="idade" placeholder="Ex: 19" onPaste="return AoColar()" onKeyPress="return ApenasNumeros(event)">                                           
+                    </section>
 
-            <footer class="footer-social">
-                <a href="https://www.facebook.com/UnigranEADOficial" title="Facebook" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/unigranead/" title="Instagram" class="fa fa-instagram"></a>
-                <a href="https://github.com/MatheusHaas" title="Github do Criador" class="fa fa-github"></a>
-            </footer>
+                    <section class="cad-botao">
+                        <p>
+                            <input type="button" value="Voltar" onClick="javascript:history.back()">
+                            <input type="reset" value="Limpar">
+                            <input type="button" value="Enviar" onClick="ValidaFormulario()">
+                        </p>
+                    </section>
+                </fieldset>
+            </form>
         </div>
-
+        
+        <footer class="footer-social">
+            <a href="https://www.facebook.com/UnigranEADOficial" title="Facebook" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/unigranead/" title="Instagram" class="fa fa-instagram"></a>
+            <a href="https://github.com/MatheusHaas" title="Github do Criador" class="fa fa-github"></a>
+        </footer>
     </body>
 </html>

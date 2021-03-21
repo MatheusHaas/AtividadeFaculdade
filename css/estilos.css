@@ -354,7 +354,7 @@ Deixando em bloquinhos para melhor vizualização
 /* 
 Posição do Cadastro 
 */
-.form_cadastro {
+.formcadastro {
   display: inline-block;
   position: absolute;
   top: 50%;
