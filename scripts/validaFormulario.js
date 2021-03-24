@@ -11,10 +11,13 @@ function ValidaFormulario () {
     }else if (emailCad === ""){
         alert("Por favor, preencha o Email");
         status = 0;
-    }else if (idadeCad === ""){
+    }else if (emailCad.indexOf('@') == -1){
+        alert("E-mail não contem o formato padrão.");
+        status = 0;
+    }else if (idadeCad === "" ){
         alert("Por favor, preencha a Idade");
         status = 0;
-    }else if (status === 1) {
+    }else if(status === 1) {
         alert("Formulário Validado com Sucesso.");
     }
 }

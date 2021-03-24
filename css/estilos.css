@@ -1,4 +1,4 @@
-/**************************  Web Site  ****************************/
+/************************************************  Web Site  ****************************************************/
 
 /*
   Adição das regras para ajustar as bordas do site para que não ficasse fora do display
@@ -36,9 +36,8 @@ body {
 }
 
 
-/**********************************************************************/
 
- /**************  Home page  *******************/
+ /***************************************  Home page  *****************************************************/
 
 /*
   cabeçalho das páginas, mostrando o nome da disciplina e o curso.
@@ -49,6 +48,17 @@ body {
   border-radius: 10px;
 }
 
+.relogio {
+  text-align: center;
+  display: block;
+  border: 3px solid;
+  width: 200px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 22px;
+}
 
 
 /*  
@@ -65,7 +75,7 @@ body {
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
   font-size: 30px;
-  padding-top: 80px;
+  padding-top: 25px;
 }
 
 
@@ -126,7 +136,7 @@ body {
   padding-top: 200px;
 }
 
-/************************ Botões de navegação **********************/
+/******************************************* Botões de navegação **********************************************/
 
 /* 
 Adiciona um fundo preto no topo da navegação 
@@ -249,7 +259,7 @@ Mostra o menu dropdown quando o mouse passar pelo botão.
   display: block;
 }
 
-/****************  Display  *************************/
+/*****************************************  Display  **************************************************/
 
 /* 
 Em dispositivos com telas pequenas irá reduzir a navegação e apresentar apenas o botão de conteúdo 
@@ -261,9 +271,8 @@ Em dispositivos com telas pequenas irá reduzir a navegação e apresentar apena
   }
 }
 
-/************************************************************************/
 
-/******************** aula 1 e 2 **************************/
+/**************************************** aula 1 e 2, aula 7 E aula 8 ******************************************/
 
 /* 
 Mudando a fonte das letras, alinhando para que o texto e as perguntas fiquem mais centralizadas, em vez de preencher toda a tela. 
@@ -304,7 +313,7 @@ Deixando em bloquinhos para melhor vizualização
 }
 
 
-/*****************  Aula 3 *********************/
+/*************************************************  Aula 3 ***********************************************/
 
 .home-page-button {
   float: center;
@@ -326,7 +335,7 @@ Deixando em bloquinhos para melhor vizualização
 }
 
 
-/****************  Aula 04 *************************/
+/*************************************************  Aula 04 **************************************************/
 
 .pintura-leo {  
   display: block;
@@ -347,9 +356,9 @@ Deixando em bloquinhos para melhor vizualização
 
 
 
-/********************** Formulário Cadastro *************************/
+/****************************************** Formulário Cadastro ******************************************************/
 
-/************* Aula 5  *************/
+/************************************************** Aula 5 **************************************************/
 
 /* 
 Posição do Cadastro 
@@ -429,7 +438,7 @@ input[type=reset]:hover {
 
 
 
-/******************* Aula 06 - audio e video *********************/
+/*************************************** Aula 06 - audio e video ***************************************************/
 
 .audio-classe, .video-classe p {
   text-align: center;
@@ -442,7 +451,7 @@ input[type=reset]:hover {
   font-size: 20px;
 }
 
-/*************  Envia.html *********************/
+/************************************************  Envia.html **************************************************/
 
 .sucesso a{
   float: center;
@@ -464,7 +473,7 @@ input[type=reset]:hover {
 }
 
 
-/************** Sobre Mim ************************/
+/************************************* Sobre Mim ******************************************************/
 
 .aboutme {
   border: 4px solid;
@@ -478,7 +487,7 @@ input[type=reset]:hover {
 
 
 
-/********************* RODAPÉ **************************/
+/*************************************************** RODAPÉ ****************************************************/
 
 /* 
 Criado a classe container para que o footer-social não ficasse em cima do conteúdo 

@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="Formulário de cadastro do Web site">
+        <meta name="Description" content="Enumciados e respostas referentes as aulas 1 e 2 de Desenvolvimento Voltado a Web I">
         <meta name="Author" content="Matheus Assunção Haas">
         <link rel="stylesheet" href="./css/estilos.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Formulário</title>
+        <title>Atividade 1 e 2</title>
     </head>
-    <body class="form">
+    <body>
 
         <header class="header-content">        
             <div class="content">
@@ -27,8 +27,8 @@
                         <a href="./aula3.html" title="Ir para Aula 3" target="_Top">Aula 3</a>   
                         <a href="./aula4.html" title="Ir para Aula 4" target="_Top">Aula 4</a>   
                         <a href="./formulario.html" title="Ir para Formulario" target="_Top">Aula 5</a>   
-                        <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>
-                        <a href="./aula7.html" title="Ir apra Aula 7" target="_Top">Aula 7</a>   
+                        <a href="./audio_video.html" title="Ir para Aula 6" target="_Top">Aula 6</a>   
+                        <a href="./aula7.html" title="Ir apra Aula 7" target="_Top">Aula 7</a>
                         <a href="./formulario_js.html" title="Ir para Aula 8" target="_Top">Aula 8</a>  
                         <a href="./sobre.html" title="Sobre mim" target="_Top">Sobre</a>  
                     </div>
@@ -49,37 +49,49 @@
         </header>
 
         <div class="container">
-            <form class="formcadastro" name="form_cad" action="envia.html" method="get">
-                <fieldset>
-
-                    <section class="">
-                            <p class="cad-titulo"> <b>FORMULÁRIO - CADASTRO DE CLIENTE</b></p>
-                            
-                                <label class="label" for="nome">Nome Completo</label>
-                                <input class="campo-cad" type="text" name="nome" placeholder="Ex: Luiz Frito" required autofocus>                                         
-                            
-                                <label class="label" for="email">E-mail</label>
-                                <input class="campo-cad" type="email" name="email" required placeholder="example@example.com">
+            <section class="aula">
+                
+                <p class="questao">
+                    <h1 class="aula-titulo">Aula 7</h1>
                         
-                                <label class="label" for="idade">Idade</label>
-                                <input class="campo-cad idade-cad" type="number" name="idade" placeholder="Ex: 19" required>                                           
-                    </section>
+                        <h2>FUNDAMENTOS EM CSS</h2>
 
-                    <section class="cad-botao">
-                        <p>
-                            <input type="button" value="Voltar">
-                            <input type="reset" value="Limpar">
-                            <input type="submit" value="Enviar">
-                        </p>
-                    </section>
-                </fieldset>
-            </form>
+                        <h2>Leia atentamente o guia de estudos e realize testes simulando as situações abaixo, e marque apenas as alternativas verdadeiras  e justifique-as.</h2>
+                        
+                        </br>
+
+                        <ol class="lista-ordenada">
+                            <li>a) Uma mesma folha de estilos pode ser usada por várias páginas.</li> 
+                            <li>b) Uma mesma página pode usar várias folhas de estilo. </li>
+                            <li> c) Se um browser não suportar uma folha de estilos requerida pela página, poderá ha-ver uma degradação na qualidade da apresentação mas nunca haverá perda de in-formação. </li>
+                            <li> d) É possível construir um site inteiro usando apenas CSS. </li>
+                            <li> e) A linguagem CSS usada para construir folhas de estilo é uma recomendação do W3C – consórcio de empresas que estabelece os padrões para a Web.</li>
+                        </ol> 
+                </p>
+                <p>
+                    <h2>Respostas:</h2>
+
+                    <ol class="lista-ordenada">
+                        <li>a – Está correto. O mesmo arquivo CSS pode ser usado por várias páginas contanto que em cada página seja chamada o arquivo para o <head> do mesmo.</li>
+                        </br>
+                        <li>b – Está correto mas por se tratar de CSS um atributo que estiver na página será o que prevalecerá, gerando confusão em futuras manutenções.</li>
+                        </br>
+                        <li>c -  Está correto. Se o site não suportar CSS apenas não irá mostrar as interações, cores e estilos da página, não afetando o conteúdo que a mesma possui(Implementado no HTML).</li>
+                        </br>
+                        <li>d – Incorreto. CSS é apenas uma técnologia de estilização, não havendo conteúdo nenhum.</li>
+                        </br>
+                        <li>e – Está correto. A W3C foi fundada com o objetito de padronizar as páginas web para que seja acessível a todas as pessoas, mesmo as que possuem dificuldades (As que necessítam de acessibilidade visual ou auditiva).</li>
+                    </ol>
+                </p>
+
+            </section>
         </div>
-        
+
         <footer class="footer-social">
             <a href="https://www.facebook.com/UnigranEADOficial" title="Facebook" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/unigranead/" title="Instagram" class="fa fa-instagram"></a>
             <a href="https://github.com/MatheusHaas" title="Github do Criador" class="fa fa-github"></a>
         </footer>
+
     </body>
 </html>
